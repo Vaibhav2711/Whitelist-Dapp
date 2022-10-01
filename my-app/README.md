@@ -1,34 +1,32 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+# Whitelist-Dapp Frontend
+
+This is a frontend for the Whitelist Dapp. To run the development server point at the my-app directory as execute. Apart from regular react libraries this frontend also has to dependencies to enable the frontend to interact with the goerli testnet.
+
+### Web3Modal
+
+eb3Modal is an easy to use library to help developers easily allow their users to connect to your dApps with all sorts of different wallets. By default Web3Modal Library supports injected providers like (Metamask, Dapper, Gnosis Safe, Frame, Web3 Browsers, etc) and WalletConnect, You can also easily configure the library to support Portis, Fortmatic, Squarelink, Torus, Authereum, D'CENT Wallet and Arkane.
+
+To install the library use
+```bash
+npm install web3modal
+```
+
+### Ether.js
+
+This library is used to connnect the blockchain with the frontend
+
+```bash
+npm install ethers
+```
+To change the styling of the website update the styling in styles/Home.modules.css. The image is stored in my-app/public folder.
+
+Update the address and abi of your contract in constants/index.js. To get the abi of your contract go to your hardhat-tutorial/artifacts/contracts/Whitelist.sol folder and from your Whitelist.json file get the array marked under the "abi" key.
+
+Run the development server using...
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

@@ -150,9 +150,9 @@ export default function Home() {
       </Head>
       <div className={styles.main}>
         <div>
-          <h1 className={styles.title}>Welcome to Crypto Dev!</h1>
+          <h1 className={styles.title}>Welcome to Crypto Minions!</h1>
           <div className = {styles.description}>
-            It&apos;s an NFT collection for developers in Crypto.
+            It&apos;s an NFT collection for fans of Minions.
           </div>
           <div className={styles.description}>
             {numberOfWhitelisted} have already joined the Whitelist
@@ -160,11 +160,11 @@ export default function Home() {
           {renderButton()}
         </div>
         <div>
-          <img className={styles.image} src ="./crypto-devs.svg" />
+          <img className={styles.image} src ="./min.png" />
         </div>
       </div>
       <footer className={styles.footer}>
-        Made with &#10084; by Crypto Devs
+        Made with &#10084; by Crypto Minions
       </footer>
     </div>
       );
